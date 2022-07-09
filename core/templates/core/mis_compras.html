@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Mis compras</title>
+     <link rel="stylesheet" href="{% static 'core/css/mis_compras.css' %}">
+     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+<body>
+     <div class="menu">
+          <img src="{% static 'core/img/imagen\koala.png' %}" alt="logo">
+  
+          <h4>
+              <font style="color:rgb(59, 135, 30)" face="Pacifico" Serif”>Puppy Shop</font>
+          </h4>
+          <h1>
+               <font face="Pacifico" Serif”> <p>➤ Mis Compras</p> </font>
+     
+          </h1>
+  
+      </div>
+
+
+     <div id="barra">
+     <div id="inicio">
+     <img src="{% static 'core/img/imagen/home.png'%}" alt="">
+     <a href="{% url 'home' %}"> INICIO</a>
+     </div>
+     <div id="productos">
+     <img src="{% static 'core/img/imagen/box.png'%}" alt="">
+     <a href="{% url 'catego' %}">PRODUCTOS</a>
+     
+     </div>
+     <div id="carro">
+     <img src="{% static 'core/img/imagen/cart.png'%}" alt="">
+     <a href="{% url 'carro' %}"> CARRO</a>
+     </div>
+     <div id="mis_compras">
+     <img src="{% static 'core/img/imagen/buy.png'%}" alt="">
+     <a href="{% url 'mis_compras' %}"> MIS COMPRAS</a>
+     </div>
+     <div id="suscribirse">
+     <img src="{% static 'core/img/Imagen/gmail.png'%}" alt="">
+     <a href="{% url 'suscribirse' %}">SUSCRIBIRSE</a>
+     </div>
+     <div id="busqueda">
+     <nav class="navbar navbar-light" style="background-color: #F1F7EB;">
+          <div class="container-fluid">
+          <form class="d-flex">
+               <input class="form-control me-5" type="buscar" placeholder="buscar" aria-label="buscar">
+               <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+          </div>
+     </nav>
+     </div>
+     </div>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous"></script>
+     
+
+
+     <div id="contenido">
+
+          <table class="table">
+               <thead>
+                    <tr>
+                         <th scope="col">Producto</th>
+                         <th scope="col">Unidades Compradas</th>
+                         <th scope="col">Precio por Unidad</th>
+                         <th scope="col">Total</th>
+                    </tr>
+               </thead>
+               <tbody>
+                    <tr>
+                         <td id="a1"> Contenedor para Comida
+                              <img src="{% static 'core/img/imagen\Contenedor.jpg' %}""
+                                   alt="" width=125px>
+                         </td>
+                         <td>2</td>
+                         <td>11.000</td>
+                         <td>$22.000</td>
+                    </tr>
+                    <tr>
+                         <td id="a1">Correa para mishis
+                              <img src="{% static 'core/img/imagen\Correa.jpg' %}"
+                                   alt="" width=125px>
+                         </td>
+                         <td>5</td>
+                         <td>$7.000</td>
+                         <td>$35.000</td>
+                    </tr>
+                    <tr>
+                         <td id="a1">Almohada para sillon
+                              <img src="{% static 'core/img/imagen\almohada.jpg' %}"
+                                   alt="" width=125px>
+                         </td>
+                         <td>2</td>
+                         <td>$10.000</td>
+                         <td>$20.000</td>
+                    </tr>
+                    <tr>
+                         <td id="a1">Alfombra
+                              <img src="{% static 'core/img/imagen\alfombra.jpg' %}" alt=""
+                                   width=125px>
+                         </td>
+                         <td>1</td>
+                         <td>$6.000</td>
+                         <td>$6.000</td>
+                    </tr>
+                    <td id="a1">Cama Pelitos
+                         <img src="{% static 'core/img/imagen\Collarisa.jpg' %}"
+                              alt="" width=125px>
+                    </td>
+                    <td>1</td>
+                    <td>$15.990</td>
+                    <td>$15.990</td>
+                    </tr>
+                    <tr>
+                         <td></td>
+                         <td></td>
+                         <td></td>
+                         <td>$98.990</td>
+                    </tr>
+               </tbody>
+          </table>
+
+
+     </div>
+
+
+     </div>
+
+
+</body>
+
+</html>
